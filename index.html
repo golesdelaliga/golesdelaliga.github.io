@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">  
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <!--
+        <a class="navbar-brand" href="#">Fixed navbar</a>
+        -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./indexnuevo.html">Analizar una alineación <span class="sr-only">(current)</span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./grafos.html">Comparar alineaciones</a>
+            </li>
+            <!--
+            <li class="nav-item">
+              <a class="nav-link" href="./analisis.html">Analisis</a>
+            </li>
+            -->
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8" >
+            <h1 class="mt-5" style="padding-top:7px;vertical-align: middle; display: table-cell;">Cuantos goles metería la Liga si jugaran...</h1>
+        </div>
+        <div class="col-sm-4">
+            <div class="row" style="align-items: center; justify-content: center;">
+                <div class="btn-group-toggle" data-toggle="buttons">
+                    <button type="button" class="btnGrafo btn btn-success" id="btn_convertir" > <i class="fa fa-futbol-o"></i>
+Calcular</button>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="col-sm-2">
+            
+            <button type="button" class="btn-lg btn btn-success" id="btn_convertir" style="font-size: 2em;display: block; margin: 0px 0;  width: 100%;height: 100%;">Calcular ⚽️</button> 
+            <label class="btn btn-lg btn-success" id="btn_convertir" style="display: block; margin: 0px 0;  width: 100%;height: 100%;">
+                <input type="button"> Calcular
+            </label>
+        </div>
+        -->
+      </div>
+      <div class="row" style="width: 100%">
+        <div class="col-sm-4" style="">    
+        <center> 
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btnPlayer btn btn-lg" id="btnAdonisPineda">
+                <input type="checkbox" checked autocomplete="off"> Adonis Pineda
+              </label>
+              <label class="btnPlayer btn btn-lg" id="btnArielLassiter">
+                <input type="checkbox" checked autocomplete="off"> Ariel Lassiter
+              </label>
+            </div>
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btnPlayer btn btn-lg" id="btnJonathanMoya">
+                <input type="checkbox" checked autocomplete="off"> Jonathan Moya
+              </label>
+              <label class="btnPlayer btn btn-lg" id="btnJonathanMcDonald">
+                <input type="checkbox" checked autocomplete="off"> Jonathan McDonald
+              </label>
+            </div>
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btnPlayer btn btn-lg" id="btnAlexLopez">
+                <input type="checkbox" checked autocomplete="off"> Alex Lopez
+              </label>
+              <label class="btnPlayer btn btn-lg" id="btnJuniorDiaz">
+                <input type="checkbox" checked autocomplete="off"> Junior Diaz
+              </label>
+           </div>
+           <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btnPlayer btn btn-lg" id="btnAnthonyLopez">
+                <input type="checkbox" checked autocomplete="off"> Anthony Lopez
+              </label>
+              <label class="btnPlayer btn btn-lg" id="btnFacundoZavala">
+                <input type="checkbox" checked autocomplete="off"> Facundo Zabala
+              </label>
+            </div>
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btnPlayer btn btn-lg" id="btnLuisGarrido">
+                <input type="checkbox" checked autocomplete="off"> Luis Garrido
+              </label>
+              <label class="btnPlayer btn btn-lg" id="btnMauricioVargas">
+                <input type="checkbox" checked autocomplete="off"> Mauricio Vargas
+              </label>
+            </div>
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btnPlayer btn btn-lg" id="btnDarioAlfaro">
+                <input type="checkbox" checked autocomplete="off"> Dario Alfaro
+              </label>
+              <label class="btnPlayer btn btn-lg" id="btnHenryFigueroa">
+                <input type="checkbox" checked autocomplete="off"> Henry Figueroa
+              </label>
+            </div>
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btnPlayer btn btn-lg" id="btnKennerGutierrez">
+                <input type="checkbox" checked autocomplete="off"> Kenner Gutierrez
+              </label>
+              <label class="btnPlayer btn btn-lg" id="btnJoseAndresSalvatierra">
+                <input type="checkbox" checked autocomplete="off"> Jose Andres Salvatierra
+              </label>
+            </div>
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btnPlayer btn btn-lg" id="btnCristopherMeneses">
+                <input type="checkbox" checked autocomplete="off"> Cristopher Meneses
+              </label>
+              <label class="btnPlayer btn btn-lg" id="btnJhamirOrdain">
+                <input type="checkbox" checked autocomplete="off"> Jhamir Ordain
+              </label>
+            </div>
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btnPlayer btn btn-lg" id="btnJoseMiguelCubero">
+                <input type="checkbox" checked autocomplete="off"> Jose MiguelCubero
+              </label>
+              <label class="btnPlayer btn btn-lg" id="btnAllenGuevara">
+                <input type="checkbox" checked autocomplete="off"> Allen Guevara
+              </label>
+            </div>
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btnPlayer btn btn-lg" id="btnBarlonSequeira">
+                <input type="checkbox" checked autocomplete="off"> Barlon Sequeira
+              </label>
+              <label class="btnPlayer btn btn-lg" id="btnLuisSequeira">
+                <input type="checkbox" checked autocomplete="off"> Luis Sequeira
+              </label>
+            </div>
+            <div class="btn-group-toggle" data-toggle="buttons">
+              <label class="btnPlayer btn btn-lg" id="btnBernaldAlfaro">
+                <input type="checkbox" checked autocomplete="off"> Bernald Alfaro
+              </label>
+              <label class="btnPlayer btn btn-lg" id="btnMarcoUrena">
+                <input type="checkbox" checked autocomplete="off"> Marco Urena
+              </label>
+            </div>
+       </center>   
+        
+        
+        
+        </div>
+        <div class="col-sm-8" style="">
+            <div class="row">
+                <div class="col-sm-6">
+                    <p id="golfcada"><p>
+                    <h1 class="superh" id="golf"> </h1>
+                    <p id="golccada"><p>
+                    <h1 class="superh" id="golc"> </h1>
+                </div>
+                <div class="col-sm-2">
+                    <p id="adicional1"></p>
+                    <h3 id="adicional1d"> </h3>
+                    <p id="adicional2"></p>
+                    <h3 id="adicional2d"> </h3>
+                    <p id="adicional3"></p>
+                    <h3 id="adicional3d"> </h3>
+                    <p id="adicional4"></p>
+                    <h3 id="adicional4d"> </h3>
+                    <p id="adicional5"></p>
+                    <h3 id="adicional5d"> </h3>
+                </div>
+            </div>
+			
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Para seleccionar jugadores se debe presionar sus nombres y posteriormente se debe presionar el botón de 'Calcular'</span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="jquery-slim.min.js"><\/script>')</script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="estadisticas.js" type="text/javascript"></script>
+  </body>
+</html>
+
