@@ -54,3 +54,11 @@ code {
     font-size: 8em !important;
     font-weight: bold;
 }
+
+.center {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  /*width: 100% !important;*/
+}
+

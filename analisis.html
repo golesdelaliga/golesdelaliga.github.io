@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">  
+    <title>Goles de la Liga</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="sticky-footer-navbar.css" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154931116-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-154931116-1');
+    </script>
+
+  </head>
+
+  <body>
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <!--
+        <a class="navbar-brand" href="#">Fixed navbar</a>
+        -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Analizar una alineación <span class="sr-only">(current)</span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./grafos.html">Comparar alineaciones</a>
+            </li>
+            
+            <li class="nav-item active">
+              <a class="nav-link" href="./analisis.html">Jugadores más ofensivos</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="./analisis2.html">Jugadores más defensivos</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Begin page content -->
+    <main role="main" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8" >
+            <h1 class="mt-5" style="padding-top:7px;vertical-align: middle; display: table-cell;">Cuáles son los Jugadores Ofensivos más Eficientes de la Liga Deportiva Alajuelense?</h1>
+        </div>
+        <div class="col-sm-4">
+
+        </div>
+      </div>
+      <div class="row" style="padding-left:1em !important; padding-right: 1em;width: 90%">
+        <h4>Escrito por Francisco Llobet Matamoros</h4>
+        <p>
+            Para el análisis de la Capacidad Anotadora de la Liga Deportiva Alajuelense se consideran los ocho jugadores ofensivos con más minutos en el campeonato de “Invierno 2019” que son: 
+        </p>
+        <ul>
+            <li> Ariel Lassiter = 2 018 minutos
+            </li>
+            <li> Alex López = 1 758 minutos
+            </li>
+            <li> Jonathan McDonald = 1 700 minutos
+            </li>
+            <li> Allen Guevara = 1 672 minutos
+            </li>
+            <li> Jonathan Moya = 1 313 minutos
+            </li>
+            <li> Marco Ureña = 1 306 minutos
+            </li>
+            <li> Anthony López = 1 147 minutos
+            </li>
+            <li> Barlon Sequeira = 975 minutos
+            </li>
+        </ul>
+        
+       <p>
+       Se realiza una cuantificación de los goles que hizo LDA cuando estos jugadores estaban presentes en el terreno de juego.  Esta cantidad de goles se va a presentar en los gráficos como la cantidad de goles marcados por LDA con el jugador presente por 90 minutos, es decir el tiempo de un partido completo.
+       </p>
+       
+       <p>
+Se ordena el gráfico de mayor a menor en cuanto a goles a favor por partido, y se observa la variación entre los distintos jugadores.
+    </p>
+    <img class="center" src="analisis11.png">
+    
+    <p>
+    En este campeonato de “Invierno 2019”, el jugador donde “La Liga” ha sido más eficiente ofensivamente es Jonathan Moya, seguido por Barlon Sequeira.  Con Barlon Sequeira se presenta un caso interesante porque él todavía No ha anotado, pero el equipo cuando él está presente en el terreno ha anotado una muy buena cantidad de goles.
+Seguidamente por “Ranking” de eficiencia está el goleador del equipo Ariel Lassiter, luego Alex López y Marco Ureña.
+Los jugadores donde el equipo ha sido menos eficiente anotando goles cuando ellos están en el terreno de juego son: Anthony López, Allen Guevara y Jonathan McDonald.
+Como complemento se analiza las combinaciones de dos jugadores jugando juntos para determinar primero donde el equipo ha sido menos eficiente anotando goles.  Las cinco parejas menos eficientes se muestran en el siguiente gráfico:
+</p>
+
+<img class="center" src="analisis12.png">
+
+<p>
+La pareja de jugadores con la menor eficiencia son Jonathan McDonald y Marco Ureña, seguidos por Anthony López y Marco Ureña.  Se había observado que Marco Ureña cuando se analizan los resultados individualmente del equipo resulta en un nivel de eficiencia promedio, pero cuando juega con Jonathan McDonald o Anthony López de compañeros el equipo tiende a tener una eficiencia más baja.  Estos son algunos de los ejemplos de datos que se pueden obtener de estos análisis.
+</p>
+
+<p>
+A continuación, se analiza las parejas donde el equipo ha sido más eficiente, y se muestran en el siguiente gráfico:
+</p>
+
+
+<img class="center" src="analisis13.png">
+
+<p>
+Como era de esperar por los resultados individuales, observados anteriormente, la pareja donde el equipo ha sido más eficiente es Jonathan Moya y Barlon Sequeira, que individualmente son los que presentan la mayor eficiencia.  Un caso interesante es el de Ureña con Moya, porque como vimos anteriormente cuando Ureña juega con McDonald o Anthony López su eficiencia es de las más deficientes, pero cuando hace pareja con Moya, el equipo aumenta su capacidad de anotar goles.
+
+</p>
+
+        
+        </div>
+        
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted"> </span>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="jquery-slim.min.js"><\/script>')</script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="estadisticas.js" type="text/javascript"></script>
+  </body>
+</html>
+
