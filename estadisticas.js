@@ -772,7 +772,7 @@ function obtenerGoles(lista1){
         adicional2.innerHTML="Goles en contra en común";
         adicional3.innerHTML="Minutos en común";
         adicional4.innerHTML="Un gol a favor cada tantos minutos";
-        adicional5.innerHTML="Un gol a favor cada tantos minutos";
+        adicional5.innerHTML="Un gol en contra cada tantos minutos";
         adicional1d.innerHTML=golesFavor;
         adicional2d.innerHTML=golesContra;
         adicional3d.innerHTML=minutosComunes;
