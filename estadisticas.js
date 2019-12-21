@@ -650,12 +650,16 @@ var partidos = {
 6: [1, 90],
 }
 },
+}
 
+function topFunction() {
+  window.scrollTo(0,document.body.scrollHeight);
 }
 
 
 function obtenerGoles(lista1){
     return function(){
+        topFunction();
         var activo = "btn-outline-primary";
         var lista = [];
         var btnAdonisPineda = document.getElementById("btnAdonisPineda");
@@ -780,6 +784,7 @@ function obtenerGoles(lista1){
         console.log("Un gol a favor cada minutos: "+(minutosComunes/golesFavor))
         console.log("Un gol en contra cada minutos: "+(minutosComunes/golesContra))
     };
+    
 }
 
 var init=function(){
